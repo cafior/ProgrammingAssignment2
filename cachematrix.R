@@ -13,3 +13,9 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 }
+
+## create list with methods for get/set of both original matrix
+## and its inverse, return the list to a parent environment
+## note that this technique allows use of $ operator to access
+## each function from the list
+list(set = set, get = get, setsolve = setsolve, getsolve = gestsolve)
